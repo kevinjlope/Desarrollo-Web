@@ -23,15 +23,34 @@
     }
 
     .header__menu{
-        
+        margin-right: 30px;    
+    }
+    .header__menu--profile{
+        margin-right: 8px;
+        width: 40px;
+    }
+    .header__menu--profileImagen{
+        width: 100px;
     }
     
-
+    
 </style>
 <body>
     <header class="header"> 
         <img class="header__img" src="https://www.linuxliteos.com/assets/img/logos/linux_lite_light_text_logo_sample.png" alt="Linux lite">
-        <div class="header__menu"></div>
+        <div class="header__menu">
+            <div class="header__menu--profile">
+                <img class="header__menu--profileImagen" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Circle-icons-profile.svg/1200px-Circle-icons-profile.svg.png" alt="Perfil">
+                <p>Perfil</p>
+            </div>
+            <div>
+                <ul>
+                    <li><a href="/">Cuenta</a></li>
+                    <li><a href="/">Cerrar Sesion</a></li>
+                </ul>
+            </div>
+        </div>
+        
     </header>
     
 </body>

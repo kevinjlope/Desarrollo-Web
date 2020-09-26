@@ -1,0 +1,16 @@
+/*body{
+    font-size: 20px;
+}
+.text-container{
+    font-size: 1em;
+}*/
+/* em toma el valor de su padre directo por ejemplo si vale 24px,
+se multiplica 24px*n(em)*/
+
+
+.text-container{
+    font-size: 1em;
+}
+.text-container div{
+    font-size: 1.5em;
+}

@@ -1,3 +1,19 @@
+/*
+ hermn=ano adyacente o cercano 
 h2 + p{
     color: blue;
+}*/
+/*Hermanos generales */
+
+/*h2 ~ p{
+    color: red;
+}*/
+/*Hijo(child) directo */ 
+div > p {
+    /* La etiqueta p que se hija directa a una etiqueda div */
+    color: red;
 }
+/*Combinador descendiente
+div p{
+    color: blue;
+} */

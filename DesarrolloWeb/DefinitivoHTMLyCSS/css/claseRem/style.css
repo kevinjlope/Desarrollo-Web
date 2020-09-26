@@ -1,8 +1,7 @@
 *{
-    padding: 0;
-    margin: 0;
     box-sizing: border-box;
-    border: 0px;
+    margin: 0;
+    padding: 0;
     /*
     box-sizing--> coge el 100 % del width, es decir si en el navegador
     se disminuye o aumenta la pantalla, el padding se suma con el content del elemento
@@ -10,10 +9,18 @@
     con el border y el padding
     */
 }
+html{
+    font-size: 62.5%;
+}
+p{
+    font-size: 2rem;
+    /*
+    padding: 10px;
+    border: 10px solid magenta;
+    background-color: red;
+    margin: 10px;*/
+}
 
-main{
-    width: 100%;
-    height: 500px;
-    border: 10px solid grey;
-    padding: 20px 35px;
+main div {
+    font-size: 1.6rem;
 }

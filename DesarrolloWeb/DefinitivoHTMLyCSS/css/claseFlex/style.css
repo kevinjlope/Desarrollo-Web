@@ -1,0 +1,81 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+}
+
+.container{
+    border: 0.3rem solid black;
+    display: flex;
+    flex-wrap: wrap;
+    /*order: # --> el orden de los hijos cambian de posicion, en caso que a uno de los hijos del contenedor padre
+    no se le asigna un order, estas etiquetas se ajustaran todas a las izquierda, y lo que tenga order se ajustaran 
+    a la derecha, respecto al orden asignado*/
+    /*aligh-items: 
+    center; --> se alinean de manera vertical en el centro del contenedor padre
+    flex-end; --> envia al final
+    flex-star; --> envia todo arriba
+    streetch; --> los hijos del contenedor padre, se estiran o se ajustan al tamano del contenedor padre, siempre y cuando
+    el height no este ya establecido
+    baseline; --> se ajusta al contenido o texto de su contenedor, en este caso a su etiqueta hija
+ -----------------------------------
+ flex-basis: Nrem; -> 
+ flex-grow: Nrem; -> 
+    /*
+    display: flex, ordena a todos los hijos de una etiqueta en row por defecto,
+    y para cambiar a otra posicion como colum , se utiliza flex-direction: colum-reverse/
+    row-reverse.
+    En caso de tener mas elementos y que no entren en el navegador se puede utilizar ->
+    flex-wrap: wrap, se ajustaran al contenedor padre
+    justify-content: center, --> justifica el contenido 
+    justify-content: flex-end --> todo a la derecha
+        justify-content: flex-star --> todo a la izquierda
+        justify-content: space-around --> el espacio entre los contenedores no es perfecto
+        justify-content: space-evenly --> el espacio es simetrico entre si
+
+    */
+
+    /*de un jueguito:
+    justify-content para ayudar a esas ranas a llegar a sus hojas de lirio. Recuerda que esta propiedad CSS alinea elementos horizontalmente y acepta los siguientes valores:
+
+    flex-start: Alinea elementos al lado izquierdo del contenedor.
+    flex-end: Alinea elementos al lado derecho del contenedor.
+    center: Alinea elementos en el centro del contenedor.
+    space-between: Muestra elementos con la misma distancia entre ellos.
+    space-around: Muestra elementos con la misma separación alrededor de ellos.
+    
+    flex-grow
+    */
+}
+.box{
+    
+    height: 10rem;
+    flex-basis: 10rem ;
+    flex-grow: 1;
+}
+.box1{
+    background-color: blue;
+}
+.box2{
+    background-color:red;
+}
+.box3{
+    background-color:green;
+}
+.box4{
+    background-color:yellow;
+}
+.box5{
+    background-color: pink;
+}
+.box6{
+    background-color: yellowgreen;
+}

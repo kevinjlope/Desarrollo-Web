@@ -1,0 +1,26 @@
+.block-element{
+    background-color: green;
+    margin: 10px;
+    padding: 20px;
+}
+/* Un display block siempre va a ocupar todo su espacio
+dado por el hight y width
+dislay inline permite que otras etiquetas se pongan delante 
+del otro siempre y cuando haya espacion,  no se puede dar un
+widht o hight, y tampoco se puede dar o establecer un margen o padding
+en el top y bottom 
+display inline block, es la funcion de los dos anteriores
+*/
+.nav{
+    background-color: burlywood;
+    padding: 20px;
+    list-style: none;
+    text-align: center;
+}
+.nav li{
+    display: inline-block;
+    font-size: 20px;
+    margin: 10px 0;
+    padding-left: 20px;
+    padding-right: 20px;
+}

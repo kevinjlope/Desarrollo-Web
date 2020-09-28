@@ -1,0 +1,39 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap; /*para reposicionar su contenido */
+}
+/*aun que esta parte de aqui tambien se la pudo a ver hecho implementando otra clase en html */
+.c1, .c2, .c3, .c4, .c5{
+    width: 100%;
+    min-width: 150px;
+    height: 150px;
+}
+
+.c4{
+    height: auto;
+}
+
+.c1{
+    background-color: blue;
+}
+.c2{
+    background-color: green;
+}
+.c3{
+    background-color: red;
+}
+.c4{
+    background-color: yellow;
+}
+.c5{
+    background-color: rgb(0, 255, 221);
+}

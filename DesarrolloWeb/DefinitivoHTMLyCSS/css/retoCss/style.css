@@ -1,0 +1,58 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.configuracion{
+    font-size: 62.5%;
+}
+.estilo-figure .estilo-img{
+    width: 50%;
+    height: 50%;
+    display: block;
+    margin: auto; 
+}
+.estilo-figcaption{
+    text-align: center;
+    font-size: 2rem;
+    border-top: 0.2rem solid;
+}
+.estilo-main{
+    
+    background-color: mediumseagreen;
+    width: 50%;
+    height: 50%;
+    margin: auto;
+    margin-top: 10rem;
+}
+body{
+    background-color: mistyrose;
+}
+.estilo-titulo{
+    bottom: 1.5rem;
+}
+.estilo-footer{    
+    top: 1.5rem;
+}
+h1{
+    background-color: teal;
+    margin: auto;
+    text-align: center;
+    border: 0.2rem;
+    border-style: solid;
+    height: 30%;
+    width: 40%;
+    position: relative;
+    font-size: 2.5rem;
+}
+.estilo-figure{
+    width: 70%;
+    height: 70%;
+    margin: auto;
+    border: 0.2rem;
+    border-style: solid;
+}
+.estilo-section{
+    border: 0.2rem;
+    border-style: solid;
+}

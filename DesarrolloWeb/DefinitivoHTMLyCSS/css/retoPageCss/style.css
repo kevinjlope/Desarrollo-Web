@@ -1,0 +1,69 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+}
+.nav{
+    list-style: none;
+    text-align: right;
+    position: relative;
+    bottom: 5rem;
+    
+}
+
+.nav li{
+    display: inline-block;
+    font-size: 2rem;
+    padding: 1rem;
+}
+.imagen{
+    width: 5rem;
+}
+.modificar-header{
+    height: 7rem;
+    background-color: cadetblue;
+}
+
+.modificar-figcation{
+    font-size: 1.5rem;
+}
+.blogs{
+    display: inline-block;
+    font-size: 1.8rem;
+    margin-right: 3rem;
+    background-color: coral;
+    text-align: center;
+    min-width: 20rem;
+    min-height: 75rem;
+    position: relative;
+    bottom: 50rem;
+    margin-right: 2rem;
+    padding-left:2rem ;
+    padding-right: 2rem;
+}
+.secciones{
+    display: inline-block;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.secciones article{
+    text-align: center;
+    min-height: 25rem;
+
+}
+.footer{
+    font-size: 1.8rem;
+    background-color: darkgray;
+}
+
+main{
+    height: 75rem;
+    background-color: cornflowerblue;
+}
+h5{
+    min-height: ;
+}

@@ -1,2 +1,2 @@
-# Platzi-Cursos
-Hola
+# Learning responsive design
+Hi

@@ -1,0 +1,17 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    /* TRUCO
+    grid-template-columns: repeat(3,200px);
+    usar la funcion repeat
+    */
+
+}
+.item{
+    background-color: aqua;
+    border: 1px solid red;
+    padding: 10px;
+}

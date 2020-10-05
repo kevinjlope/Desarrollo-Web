@@ -1,0 +1,24 @@
+CSS Grinds
+Es un display que al igual de flex, trabaja con los elementos hijos, pero ademas 
+su funcion es convertir todos esos elementos en una grilla o rejilla, para trabajar
+los layouts dividida en filas y columnas. 
+
+
+
+CLASE 6: Grids identados y tipos de displays
+Para tomar un elemento de un tipo, o de una clase, le ponemos la pseudo clase nth-of-type(numero del elemento)
+Grids identados y tipos de displays
+nth-of-type() : es un tipo de selector de referencia de CSS, que se utiliza específicamente para dar estilos a los hijos de algún padre en la estructura CSS. (No solamente admite números, sino keywords como: odd, even, 3n+0)
+.
+La propiedad CSS overflow especifica: si recortar contenido, dibujar barras de desplazamiento o mostrar el contenido excedente en un elemento a nivel de bloque.
+.
+Para poder ingresar un grid dentro de otro grid, solo debes agregar dos propiedades de grid en el siguiente elemento que estés configurando, estas son:
+
+display: grid;
+grid-template:300px 100px 100px;
+Grid template, no surtirá efecto si no tienes el display de grid.
+Display subgrid para heredar la configuración del grid padre (cuando se esten anidando grids).
+display: subgrid; // No disponible aun
+
+Display inline-grid muestra el grid en una sola linea:
+display: inline-grid; // No disponible aun

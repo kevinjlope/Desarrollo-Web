@@ -5,15 +5,30 @@ body{
     display: grid;
     
     /* TRUCO
+     -->
     grid-template-columns: 200px 200px 200px;
     grid-template-columns: repeat(3,200px);
     usar la funcion repeat
     grid-template-rows: 300px 300px;
     grid-template: filas / columnas;
     */
-    grid-template: 200px 200px 100px/ 200px 100px 200px;
-    
+    /*
+    gird-template: 200px 200px 100px/ repeat(4, minmax(200px, 1fr))
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    grid-gap: fila  columna;
 
+    grid-gap: 20px  20px;
+*/
+    /*row-gap: 20px;
+    column-gap: 20px; */
+    grid-template: 100px 1fr 150px / 200px 1fr;
+    gap: 10px;
+    height: 100vh;
+    grid-template-areas: 
+        "header header "
+        "left contenido"
+        "footer footer";
 }
 .item{
     background-color: aqua;
@@ -32,4 +47,16 @@ body{
 }
 .item .item{
     background-color: seagreen;
+}
+.header{
+    grid-area: header;
+}
+.left{
+    grid-area: left;
+}
+.contenido{
+    grid-area: contenido;
+}
+.footer{
+    grid-area: footer;
 }

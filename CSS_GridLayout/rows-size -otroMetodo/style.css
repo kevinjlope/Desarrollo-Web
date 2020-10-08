@@ -1,0 +1,31 @@
+.container{
+    display: grid;
+    /* Nota:  Para este metodo no se puede utilizar la funcion repeat()
+    */
+    grid-template-columns: [inicio]1fr [linea2] 1fr [linea3] 1fr [destacado-end] 1fr [linea5] 1fr [destacado2-end] 1fr [linea7] 1fr[final];
+    grid-template-rows: [inicio-row]200px [linea-row1]200px[final-row]; 
+    height: 100vh;
+    gap: 5px;
+}
+.item{
+    border: 1px solid red;
+    background-color: blue;
+    padding: 10px;
+}
+.item:nth-of-type(1){
+ /*   grid-column: 1/ span 3;
+    grid-row: 1 / span 2;*/
+    grid-column: inicio / destacado-end;
+    grid-row: inicio-row / final-row;
+}
+.item:nth-of-type(2){
+   /* grid-column: 4/ span 2;
+    grid-row: 1 / span 2; */
+    grid-column: destacado-end / destacado2-end;
+    grid-row: inicio-row / final-row;
+}
+.item:nth-of-type(3){
+    /*grid-column: 6/ span 2;
+    grid-row: 1 / span 1;*/
+    grid-column: destacado2-end / final;
+}

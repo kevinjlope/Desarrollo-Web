@@ -1,0 +1,31 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 10px;
+    height: 100vh;
+    
+}
+.item{
+    background-color: skyblue;
+    border: 1px solid red;
+}
+.item:nth-of-type(1){
+    background-color: blue;
+    grid-column-start: 1;
+    grid-column-end: 3; 
+    /*ojo--> star y end, se basan por las lineas del grid,
+    en este caso avanza hasta la 3era linea*/
+}
+.item:nth-of-type(8){
+    /*grid-column: 2 / 4;
+    de otra forma: se puede utilizar 'span' --> en este caso no se basa
+    en el numero de lineas, si no en el numero de columnas */
+    grid-column: 1 / span 2;
+}
+.item:nth-of-type(7){
+    grid-column: 2 / 4;
+}

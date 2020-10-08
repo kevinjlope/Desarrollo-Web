@@ -1,0 +1,23 @@
+.container{
+    display: grid;
+    font-size: Arial;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: repeat(4, 1fr);
+      gap: 2px;
+      height: 100vh;
+     /* justify-items: start end center stretch;  --> izquierda a derecha (horizontal)
+      align-items: start end center stretch;  -->  de arriba a abajo (vertical) */
+      justify-items: center;
+      align-items: center;
+  
+}
+.item{
+    background-color: blue;
+    border: 1px solid red;
+    padding: 20px;
+}
+.item:nth-of-type(5){
+    align-self: start;
+    justify-self: start;
+
+}

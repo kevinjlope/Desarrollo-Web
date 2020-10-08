@@ -4,7 +4,6 @@ su funcion es convertir todos esos elementos en una grilla o rejilla, para traba
 los layouts dividida en filas y columnas. 
 
 
-
 CLASE 6: Grids identados y tipos de displays
 Para tomar un elemento de un tipo, o de una clase, le ponemos la pseudo clase nth-of-type(numero del elemento)
 Grids identados y tipos de displays

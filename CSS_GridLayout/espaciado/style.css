@@ -12,8 +12,16 @@ body{
     grid-template: filas / columnas;
     */
     grid-template: 200px 200px 100px/ 200px 100px 200px;
-    
+    /*
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    grid-gap: fila  columna;
 
+    grid-gap: 20px  20px;
+*/
+    /*row-gap: 20px;
+    column-gap: 20px; */
+    gap: 30px 30px;
 }
 .item{
     background-color: aqua;

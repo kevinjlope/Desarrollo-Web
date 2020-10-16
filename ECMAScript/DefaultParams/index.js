@@ -39,7 +39,7 @@ console.log(unionT);
 }
 console.log(globalVar);
 console.log(globalLet);
-
+//const no permite el cambio de valor de las variables
 const a = 'b';
 a = 'a';
 console.log(a);

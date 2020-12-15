@@ -11,8 +11,8 @@ Reto: agrega el atributo altura y la función soyAlto.
 class Persona{
     constructor(nombre,apellido,altura){
         this.nombre = nombre;
-    this.apellido = apellido;
-    this.altura = altura;    
+        this.apellido = apellido;
+        this.altura = altura;    
     }
     saludar(){
         console.log(`Hola me llamo: ${this.nombre} ${this.apellido}`)

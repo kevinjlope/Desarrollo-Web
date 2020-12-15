@@ -47,9 +47,10 @@ obtenerPersonaje(1)
 var contador = 1;
 while(contador < 20){
     //var otraV = contador;
-    obtenerPersonaje(contador)
+    let cont2 = contador
+    obtenerPersonaje(cont2)
     .then(personaje => {
-        console.log(`El personaje ${contador} es ${personaje.name}`)
+        console.log(`El personaje ${cont2} es ${personaje.name}`)
         //return obtenerPersonaje(2)
     })
     .catch(onError)

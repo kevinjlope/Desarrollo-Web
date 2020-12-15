@@ -60,6 +60,8 @@ var acum = 0;
 for( var i =0; i< personas.length; i++){
     acum = acum + personas[i].cantidadDeLibros;
 }*/
+/*const reducer = (acum, {cantidadDeLibros}) => acum + cantidadDeLibros  
+*/
 const reducer = (acum,persona) => acum + persona.cantidadDeLibros; 
 
 //0 --> es el valor inicial del acumulador;

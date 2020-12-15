@@ -18,9 +18,23 @@ let world = 'World';
 let epicPhrase = hello + ' '+ world;
 console.log(epicPhrase);
 
-epicPhrase2 = `${hello} ${world}`;
+epicPhrase2 = `${hello} ${world}`; //Aplicando templaes literal, `` --> COmillas francesas
 console.log(epicPhrase2);
+//Clase 2
+//MULTILINEAS
+let lorem = `Esta es una frase epica
+esta es otra frase epica
+`;
+console.log(lorem);
 
+let person = {
+    name: 'Kevin',
+    age: 24,
+    country: 'EC'
+}
+console.log(person.name, person.age,person.country);
+let{name, age, country} = person;
+console.log(name, age, country);
 //Unir arreglos en un solo arreglo --> operador de propragacion
 let team1 = ['Kevin', 'Julian','Ricardo'];
 let team2 = ['Daniela', 'Rocio','Wendy'];

@@ -35,3 +35,22 @@ function permitirAcceso(persona){
 }
 mayorEdad(persona);
 permitirAcceso(persona);
+
+/*Repaso arrowFunction
+const nameFunction = (argument) =>{
+    return condition value
+}
+Si el argumento de la funcion es solo uno, se puede escribir sin parentesis, quitar las llaves y obviar el return
+ya que quedaria implicito
+const nameFunction = argument => condition value
+}*/
+
+var kevin = {
+    nombre : 'kevin',
+    apellido: 'lopez',
+    carrera: 'mecatronica'
+}
+
+const estudiaMecatronica = persona => persona.carrera === 'mecatronica'
+const mostrarValor = persona => console.log(`Estudia ${persona.carrera}: ${estudiaMecatronica(persona)}`)
+mostrarValor(kevin)

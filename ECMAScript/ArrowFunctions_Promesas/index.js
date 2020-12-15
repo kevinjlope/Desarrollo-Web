@@ -1,5 +1,5 @@
 let name = 'Kevin';
-let age = '23';
+let age = '24';
 //es5
 obj = {name:name, age:age};
 //es6
@@ -15,7 +15,9 @@ const names = [
 let listOfNames = names.map(function(item){
     console.log(item.name);
 })
-
+let nombre = item => console.log(item.name) 
+//
+let metodo2 = names.map(nombre)
 //ES6
 let listOfNames2 = names.map(item => console.log(item.name));
 //otra forma

@@ -1,3 +1,4 @@
+//clase 21
 var kevin = {
     nombre : 'Kevin',
     apellido : 'Lopez',
@@ -24,6 +25,8 @@ var daniela = {
     altura: 1.64
 }
 var personas = [kevin,pedro,rocio,darly,daniela];
+//Para evitar escribir el return en la arrow functions, se puede agregar los corchetes
+//dentro de parentesis
 const pasarAlturaACms = persona => ({
         ...persona,
         altura: persona.altura*100

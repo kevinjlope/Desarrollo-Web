@@ -9,14 +9,14 @@ const entries = Object.entries(data);
 console.log(entries);
 console.log(entries.length);
 
-//Object.values --> devuelve los valores de un objeto a un array
-const data = {
+//Object.values --> devuelve los valores de un objeto y los agg a un array
+const data1 = {
     frontend: 'Kevin',
     backend: 'Ana',
     design: 'Rosy'
 }
 
-const values = Object.values(data);
+const values = Object.values(data1);
 console.log(values);
 console.log(values.length);
 

@@ -18,7 +18,7 @@ class Persona{
         var { nombre, apellido} = this;
         console.log(`Hola me llamo: ${nombre} ${apellido}`)
         if(fn){
-            fn(nombre, apellido)
+            fn(nombre, apellido) //Se llama a la funcion y se le pasa esos datos como parametros
         }
     }
     soyAlto(){
@@ -42,6 +42,7 @@ class Desarrollador extends Persona{
         return this.altura > 1.8;   
     }*/
 }
+
 function responderSaludo(nombre, apellido, esDev){
     console.log(`Buen dia ${nombre} ${apellido}`);
     if(esDev){

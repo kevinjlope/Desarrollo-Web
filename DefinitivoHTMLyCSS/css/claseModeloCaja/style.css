@@ -1,7 +1,8 @@
+
 *{
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
+    box-sizing: border-box; 
     border: 0px;
     /*
     box-sizing--> coge el 100 % del width, es decir si en el navegador

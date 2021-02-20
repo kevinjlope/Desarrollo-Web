@@ -6,10 +6,17 @@
     <title>Formularios</title>
 </head>
 <body>
-    <form action="">
-        <label for="nombre">
-            <span>Cual es tu nombre?</span>
+    <form action=""> <!--Indica que se realizara un formulario con la etiqueta form
+    'action' es un atributo donde se agrega la url donde se envia la informacion 
+    a la base de datos-->
+        <label for="nombre"> <!---->
+            <span>Cual es tu nombre?</span> <!--Si se da click en esta etiqueta
+            automaticamente selecciona al input que pertenece-->
             <input type="text" id="nombre" placeholder="Tu nombre">
+            <!--Ojo el id del input, debe ser del mismo atributo de la etiqueta label
+            especificamente el mismo del atributo for-->
+            <!--El atributo placeholder practicamente muestra un texto de ayuda para
+            el usuario-->
         </label>
         <label for="inicio-platzi">
             <span>Que dia comenzaste en platzi?</span>

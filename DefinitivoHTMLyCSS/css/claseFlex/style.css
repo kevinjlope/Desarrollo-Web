@@ -15,7 +15,8 @@ body{
 .container{
     border: 0.3rem solid black;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /*Practicamente wrap, hace que las etiquetas hijas se ajusten al tamano 
+    de la ventana (viewport), de manera automatica*/
     /*order: # --> el orden de los hijos cambian de posicion, en caso que a uno de los hijos del contenedor padre
     no se le asigna un order, estas etiquetas se ajustaran todas a las izquierda, y lo que tenga order se ajustaran 
     a la derecha, respecto al orden asignado*/
@@ -27,15 +28,15 @@ body{
     el height no este ya establecido
     baseline; --> se ajusta al contenido o texto de su contenedor, en este caso a su etiqueta hija
  -----------------------------------
- flex-basis: Nrem; -> 
- flex-grow: Nrem; -> 
+ flex-basis: Nrem; -> especifíca la base flexible, la cual es el tamaño inicial de un elemento flexible.
+ flex-grow: Nrem; -> es el factor de crecimiento y ocupan el numero de posicion, del espacio que sobra
     /*
     display: flex, ordena a todos los hijos de una etiqueta en row por defecto,
     y para cambiar a otra posicion como colum , se utiliza flex-direction: colum-reverse/
     row-reverse.
     En caso de tener mas elementos y que no entren en el navegador se puede utilizar ->
     flex-wrap: wrap, se ajustaran al contenedor padre
-    justify-content: center, --> justifica el contenido 
+    justify-content: center, --> justifica el contenido en el centro
     justify-content: flex-end --> todo a la derecha
         justify-content: flex-star --> todo a la izquierda
         justify-content: space-around --> el espacio entre los contenedores no es perfecto

@@ -143,7 +143,7 @@ main{
     margin-bottom:3rem;
 }
 
-.main-currency-table{
+.main-currency-table, .main-commissions-table{
     width: 70%;
     min-width: 23.5rem;
     max-width: 50rem;
@@ -158,22 +158,193 @@ main{
     line-height: 2.3rem;
     color: var(--bitcoin-orange);
 }
-.currency-table--container{
+
+.main-commissions-table .commissions-table--title{
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 2.3rem;
+    color: var(--secondary-blue);
+}
+.currency-table--container, .commissions-table--container{
     width: 90%;
     min-width: 23rem;
     max-width: 30rem;
     height: 25rem;
     margin: 0 auto;
 }
-.currency-table--container table{
+.currency-table--container table, .commissions-table--container table{
     width: 100%;
     height: 100%;    
 }
-.currency-table--container td{
+.currency-table--container td, .commissions-table--container td{
     width: 50%;
     font-size: 1.6rem;
     font-weight: 500;
     line-height: 1.9rem;
     color: var(--grey);
     background-color: var(--just-white)
+}
+.currency-table--container .table__top-left, .commissions-table--container .table__top-left{
+    border-radius: 1.5rem 0 0 0;
+}
+.currency-table--container .table__top-right, .commissions-table--container .table__top-right{
+    border-radius: 0 1.5rem 0 0;
+}
+
+.currency-table--container .table__bottom-left, .commissions-table--container .table__bottom-left{
+    border-radius: 0 0 0 1.5rem;
+}
+.currency-table--container .table__bottom-right, .commissions-table--container .table__bottom-right{
+    border-radius: 0 0 1.5rem 0;
+}
+.currency-table--container .table__right, .commissions-table--container .table__right{
+    color: #757575;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+}
+
+.currency-table--container .up{
+    background-image: url("./assets/icons/trending-up.svg");
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-left: 1rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.currency-table--container .down{
+    background-image: url("./assets/icons/trending-down.svg");
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-left: 1rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.currency-table--date{
+    margin:1.6rem auto 0;
+    width: 20rem;
+    height: 3rem;
+    padding: 0.8rem;
+    border-radius: 0.8rem;
+    background-color: var(--soft-orange);
+}
+
+.currency-table--date p{
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 1.5rem;
+    color: var(--warm-black)
+    
+}
+.main-product-detail{
+    position: relative;
+    width: 100%;
+    min-width: 32rem;
+    height: auto;
+    padding: 2rem 1rem;
+    background-color: var(--warm-black)
+}
+.product-detail--batata-logo{
+    position: absolute;
+    width: 4rem;
+    height: 2.5rem;
+    background-image: url("./assets/icons/Group.svg");
+    top: -1rem;
+    left: calc(50% - 2rem);
+
+}
+.product-detail--title{
+    width: 90%;
+    min-width: 28.8rem;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 5rem;
+    text-align: center;
+}
+.product-detail--title h2{
+    margin-bottom: 2rem;
+    font-size: 2.4rem;
+    color: var(--just-white);
+    font-weight: bold;
+    line-height: 2.6rem;
+}
+.product-detail--title p{
+    margin-bottom: 2rem;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #808080;
+}
+.product-detail--card{
+    width: 90%;
+    min-width: 28.8rem;
+    max-width: 40rem;
+    height: 15rem;
+    margin: 1.5rem auto;
+    padding: 1.5rem;
+    background-color: var(--black);
+    border-radius: 0.5rem;
+    box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.16)
+}
+.product-detail--card .clock{
+    display: inline-block;
+    height: 3rem;
+    width: 3rem;
+    margin-bottom: 1rem;
+    background-image: url("./assets/icons/clock.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.product-detail--card .eye{
+    display: inline-block;
+    height: 3rem;
+    width: 3rem;
+    margin-bottom: 1rem;
+    background-image: url("./assets/icons/eye.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.product-detail--card .money{
+    display: inline-block;
+    height: 3rem;
+    width: 3rem;
+    margin-bottom: 1rem;
+    background-image: url("./assets/icons/dollar-sign.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.product-detail--card .check{
+    display: inline-block;
+    height: 3rem;
+    width: 3rem;
+    margin-bottom: 1rem;
+    background-image: url("./assets/icons/check-circle.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.product--card-title{
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    color: var(--just-white);
+}
+.product--card-body{
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #808080;
 }

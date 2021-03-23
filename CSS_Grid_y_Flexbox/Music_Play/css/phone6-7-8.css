@@ -1,0 +1,32 @@
+.wrapper{
+    grid-template-rows: 6rem 33rem 12.7rem 9rem 6rem;
+
+}
+.images--container{
+    max-width: 32rem;
+}
+img{
+    width: 26rem;
+    height: 26rem;
+}
+.info-containerI{
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+}
+p{
+    font-size: 16px;
+    line-height: 15px;
+}
+.top--title{
+    font-size: 2.3rem;
+    line-height: 2.3rem;
+}
+.info-containerT--music{
+    font-size: 3rem;
+    line-height: 3.1rem;
+}
+.info-containerT--artics{
+    
+    font-size: 2.3rem;
+    line-height: 2.2rem;
+}

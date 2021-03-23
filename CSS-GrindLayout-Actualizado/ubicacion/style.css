@@ -1,0 +1,26 @@
+:root{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.grid-container{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 600px;
+    height: 300px;
+    grid-template-areas: 
+    "card-1 card-2"
+    "card-3 card-3";
+}
+.item-one{
+    background: hotpink;
+    grid-area: card-1;
+}
+.item-two{
+    background:chocolate;
+    grid-area: card-2;
+}
+.item-three{
+    background: blueviolet;
+    grid-area: card-3;
+}

@@ -1,0 +1,254 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+:root{
+    /*colores*/
+    --background: #1C2024;
+    --text-color: #D1D2D1;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+    /*font-family: 'Roboto', sans-serif; */
+    font-family: 'Roboto Condensed', sans-serif;
+    background : var(--background);
+    color: var(--text-color)
+}
+.wrapper{
+    display: grid;
+    grid-template-rows: 5.8rem 25rem 11.2rem 9rem 5.8rem;
+}
+header{
+    grid-row: 1/2;
+  /*  background: red;*/
+    display: grid;
+}
+.top{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.top--icon-down{
+    height: 3.5rem;
+    width: 3.5rem;
+    background-image: url(./assets/icons/down.svg);
+    display: inline-block;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.25), -10px -10px 15px rgba(255, 255, 255, 0.25), 10px 10px 15px rgba(0, 0, 0, 0.25);
+    border-radius: 50%;
+}
+.top--icon-dots{
+    height: 3.5rem;
+    width: 3.5rem;
+    background-image: url(./assets/icons/dots.svg);
+    display: inline-block;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.25), -10px -10px 15px rgba(255, 255, 255, 0.25), 10px 10px 15px rgba(0, 0, 0, 0.25);
+    border-radius: 50%;
+}
+.top--title{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2rem;
+    line-height: 2.3rem;
+}
+
+.images{
+    grid-row: 2/3;
+   /* background: blue;*/
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+.images--container{
+    display: flex;
+    justify-content: flex-start;
+    max-width: 28rem;
+    overflow-x: auto;
+    scroll-snap-type: x proximity;
+}
+img{
+    width: 21rem;
+    height: 21rem;
+    margin: 2rem 1rem;
+    scroll-snap-align: center;
+    border-radius: 2rem;
+    box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.25), -10px -10px 15px rgba(255, 255, 255, 0.25), 10px 10px 15px rgba(0, 0, 0, 0.25);
+}
+
+.info{
+    grid-row: 3/4;
+   /* background: black;*/
+    display: grid;
+}
+
+.info-containerT--music{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2.8rem;
+    line-height: 3.3rem;
+}
+.info-containerT--artics{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 2rem;
+    line-height: 2.3rem;
+}
+p{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+.info-containerI--icon{
+    display: inline-block;
+    height: 1rem;
+    min-width: 29rem;
+    background-image: url(./assets/icons/scrollbar-music-de-320.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.info-containerT{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.info-containerI{
+    display: flex;
+    flex-direction: column;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+.info-containerI--time{
+    display: flex;
+    justify-content: space-between;
+}
+
+.control{
+    grid-row: 4/5;
+  /*  background: green;*/
+    display: grid;
+}
+
+.control-music-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.icon-heart{
+    height: 3.8rem;
+    width: 3.8rem;
+    background-image: url(./assets/icons/heart.svg);
+    display: inline-block;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.25), -10px -10px 15px rgba(255, 255, 255, 0.25), 10px 10px 15px rgba(0, 0, 0, 0.25);
+    border-radius: 50%;
+    margin-left: 1rem;
+}
+.icon-repeat{
+    height: 3.8rem;
+    width: 3.8rem;
+    background-image: url(./assets/icons/repeat.svg);
+    display: inline-block;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.25), -10px -10px 15px rgba(255, 255, 255, 0.25), 10px 10px 15px rgba(0, 0, 0, 0.25);
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+.icon-next-i{
+    height: 5rem;
+    width: 5rem;
+    background-image: url(./assets/icons/next-i.svg);
+    display: inline-block;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.25), -10px -10px 15px rgba(255, 255, 255, 0.25), 10px 10px 15px rgba(0, 0, 0, 0.25);
+    border-radius: 50%;
+}
+
+.icon-next{
+    height: 5rem;
+    width: 5rem;
+    background-image: url(./assets/icons/next.svg);
+    display: inline-block;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.25), -10px -10px 15px rgba(255, 255, 255, 0.25), 10px 10px 15px rgba(0, 0, 0, 0.25);
+    border-radius: 50%;
+}
+
+.icon-play{
+    height: 6.2rem;
+    width: 6.2rem;
+    background-image: url(./assets/icons/play.svg);
+    display: inline-block;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.25), -10px -10px 15px rgba(255, 255, 255, 0.25), 10px 10px 15px rgba(0, 0, 0, 0.25);
+    border-radius: 50%;
+}
+
+footer{
+    grid-row: 5/6;
+   /* background: orange;*/
+    display: grid;
+}
+.footer--icon-phone{
+    height: 3.5rem;
+    width: 3.5rem;
+    background-image: url(./assets/icons/phone-desktop.svg);
+    display: inline-block;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /*box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.25), -10px -10px 15px rgba(255, 255, 255, 0.25), 10px 10px 15px rgba(0, 0, 0, 0.25);
+    border: transparent*/
+    
+}
+.footer--icon-music{
+    height: 3.5rem;
+    width: 3.5rem;
+    background-image: url(./assets/icons/list-music.svg);
+    display: inline-block;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /*box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.25), -10px -10px 15px rgba(255, 255, 255, 0.25), 10px 10px 15px rgba(0, 0, 0, 0.25);
+    border: transparent;*/
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between ;
+    align-items: center;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}

@@ -1,0 +1,52 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+.perfil{
+    height: 100px;
+    width: 100px;
+    float: left;
+}
+header{
+    overflow: auto;
+    width: 320px;
+}
+p{
+    color: gray;
+}
+img{
+    width: 320px;
+    }
+figcaption{
+    color: gray;
+}
+.icon{
+    height: 15px;
+    width: 15px;
+}
+.footer{
+    display: flex
+        
+}
+.footer .footer--flex-lista ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    width: 160px;
+    justify-content: space-around;
+}
+
+.footer--flex-button{
+    display: flex;
+    justify-content: space-around;
+    width: 160px;
+}
+button{
+    border: none; 
+    background: transparent;
+    color: aqua;   
+}

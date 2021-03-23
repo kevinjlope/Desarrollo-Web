@@ -1,0 +1,24 @@
+.wrapper{
+    grid-template-rows: 10rem 50rem 18rem 13rem 10rem;
+}
+.images--container{
+    max-width: 90rem;
+    height: 45rem;
+}
+img{
+    width: 0rem;
+    height: 0rem;
+    
+}
+.principal{
+    width: 37rem;
+    height: 37rem;
+}
+.info-containerI{
+    margin-left: 7.5rem;
+    margin-right: 7.5rem;
+}
+.footer{
+    margin-left: 7.5rem;
+    margin-right: 7.5rem;
+}
